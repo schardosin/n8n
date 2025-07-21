@@ -85,6 +85,7 @@
       "dist/nodes/llms/LMChatOllama/LmChatOllama.node.js",
       "dist/nodes/llms/LmChatOpenRouter/LmChatOpenRouter.node.js",
       "dist/nodes/llms/LmChatXAiGrok/LmChatXAiGrok.node.js",
+      "dist/nodes/llms/LmChatSapAiCore/LmChatSapAiCore.node.js",
       "dist/nodes/llms/LMChatOpenAi/LmChatOpenAi.node.js",
       "dist/nodes/llms/LMOpenAi/LmOpenAi.node.js",
       "dist/nodes/llms/LMCohere/LmCohere.node.js",
@@ -227,6 +228,8 @@
     "undici": "^6.21.0",
     "weaviate-client": "3.6.2",
     "zod": "catalog:",
-    "zod-to-json-schema": "3.23.3"
+    "zod-to-json-schema": "3.23.3",
+    "@sap-ai-sdk/langchain": "1.16.0",
+    "@sap-ai-sdk/orchestration": "1.16.0"
   }
 }
