@@ -73,14 +73,9 @@ export class LmChatSapAiCore implements INodeType {
 		};
 
 		// Configure orchestration for the selected model
-		console.log(options.maxTokens);
 		const orchestrationConfig: LangChainOrchestrationModuleConfig = {
 			llm: {
-				model_name: modelName, // This comes from n8n UI selection
-				model_params: {
-					temperature: options.temperature ?? 0.7,
-					max_tokens: options.maxTokens ?? 8192,
-				},
+				model_name: modelName,
 			},
 		};
 
@@ -90,6 +85,7 @@ export class LmChatSapAiCore implements INodeType {
 		};
 
 		// Create OrchestrationClient - universal client for all model types
+		// Note: Each client instance should be independent to avoid credential caching issues
 		const client = new OrchestrationClient(
 			orchestrationConfig,
 			{
