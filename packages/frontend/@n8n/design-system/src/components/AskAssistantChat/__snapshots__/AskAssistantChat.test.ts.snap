@@ -150,6 +150,7 @@ exports[`AskAssistantChat > does not render retry button if no error is present 
                 <!--v-if-->
               </div>
               
+              <!--v-if-->
             </div>
             <!--v-if-->
           </data>
@@ -170,15 +171,19 @@ exports[`AskAssistantChat > does not render retry button if no error is present 
         rows="1"
         wrap="hard"
       />
-      <n8n-icon-button-stub
+      <n8n-button-stub
         active="false"
+        block="false"
         class="sendButton"
         data-test-id="send-message-button"
         disabled="true"
+        element="button"
         icon="send"
+        label=""
         loading="false"
         outline="false"
         size="large"
+        square="true"
         text="true"
         type="primary"
       />
@@ -338,6 +343,7 @@ exports[`AskAssistantChat > renders chat with messages correctly 1`] = `
                 <!--v-if-->
               </div>
               
+              <!--v-if-->
             </div>
             <!--v-if-->
           </data>
@@ -614,6 +620,7 @@ exports[`AskAssistantChat > renders chat with messages correctly 1`] = `
                 </div>
               </div>
               
+              <!--v-if-->
             </div>
             <!--v-if-->
           </data>
@@ -658,6 +665,7 @@ exports[`AskAssistantChat > renders chat with messages correctly 1`] = `
                 <!--v-if-->
               </div>
               
+              <!--v-if-->
             </div>
             <!--v-if-->
           </data>
@@ -789,6 +797,7 @@ Testing more code
                 </div>
               </div>
               
+              <!--v-if-->
             </div>
             <!--v-if-->
           </data>
@@ -918,6 +927,7 @@ Testing more code
                 </div>
               </div>
               
+              <!--v-if-->
             </div>
             <div
               class="quickReplies"
@@ -982,15 +992,19 @@ Testing more code
         rows="1"
         wrap="hard"
       />
-      <n8n-icon-button-stub
+      <n8n-button-stub
         active="false"
+        block="false"
         class="sendButton"
         data-test-id="send-message-button"
         disabled="true"
+        element="button"
         icon="send"
+        label=""
         loading="false"
         outline="false"
         size="large"
+        square="true"
         text="true"
         type="primary"
       />
@@ -1163,15 +1177,19 @@ exports[`AskAssistantChat > renders default placeholder chat correctly 1`] = `
         rows="1"
         wrap="hard"
       />
-      <n8n-icon-button-stub
+      <n8n-button-stub
         active="false"
+        block="false"
         class="sendButton"
         data-test-id="send-message-button"
         disabled="true"
+        element="button"
         icon="send"
+        label=""
         loading="false"
         outline="false"
         size="large"
+        square="true"
         text="true"
         type="primary"
       />
@@ -1331,6 +1349,7 @@ exports[`AskAssistantChat > renders end of session chat correctly 1`] = `
                 <!--v-if-->
               </div>
               
+              <!--v-if-->
             </div>
             <!--v-if-->
           </data>
@@ -1339,6 +1358,8 @@ exports[`AskAssistantChat > renders end of session chat correctly 1`] = `
           >
             <div
               class="message"
+              is-last-message="true"
+              streaming="false"
             >
               <!--v-if-->
               
@@ -1407,6 +1428,7 @@ exports[`AskAssistantChat > renders end of session chat correctly 1`] = `
                 </span>
               </div>
               
+              <!--v-if-->
             </div>
             <!--v-if-->
           </data>
@@ -1428,15 +1450,19 @@ exports[`AskAssistantChat > renders end of session chat correctly 1`] = `
         rows="1"
         wrap="hard"
       />
-      <n8n-icon-button-stub
+      <n8n-button-stub
         active="false"
+        block="false"
         class="sendButton"
         data-test-id="send-message-button"
         disabled="true"
+        element="button"
         icon="send"
+        label=""
         loading="false"
         outline="false"
         size="large"
+        square="true"
         text="true"
         type="primary"
       />
@@ -1527,6 +1553,8 @@ exports[`AskAssistantChat > renders error message correctly with retry button 1`
           >
             <div
               class="message"
+              is-last-message="true"
+              streaming="false"
             >
               <div
                 class="roleName userSection"
@@ -1608,6 +1636,7 @@ exports[`AskAssistantChat > renders error message correctly with retry button 1`
                 />
               </div>
               
+              <!--v-if-->
             </div>
             <!--v-if-->
           </data>
@@ -1628,15 +1657,19 @@ exports[`AskAssistantChat > renders error message correctly with retry button 1`
         rows="1"
         wrap="hard"
       />
-      <n8n-icon-button-stub
+      <n8n-button-stub
         active="false"
+        block="false"
         class="sendButton"
         data-test-id="send-message-button"
         disabled="true"
+        element="button"
         icon="send"
+        label=""
         loading="false"
         outline="false"
         size="large"
+        square="true"
         text="true"
         type="primary"
       />
@@ -1866,6 +1899,7 @@ catch(e) {
                 <!--v-if-->
               </div>
               
+              <!--v-if-->
             </div>
             <!--v-if-->
           </data>
@@ -1886,15 +1920,19 @@ catch(e) {
         rows="1"
         wrap="hard"
       />
-      <n8n-icon-button-stub
+      <n8n-button-stub
         active="false"
+        block="false"
         class="sendButton"
         data-test-id="send-message-button"
         disabled="true"
+        element="button"
         icon="send"
+        label=""
         loading="false"
         outline="false"
         size="large"
+        square="true"
         text="true"
         type="primary"
       />
@@ -2056,6 +2094,7 @@ exports[`AskAssistantChat > renders streaming chat correctly 1`] = `
                 />
               </div>
               
+              <!--v-if-->
             </div>
             <!--v-if-->
           </data>
@@ -2077,15 +2116,19 @@ exports[`AskAssistantChat > renders streaming chat correctly 1`] = `
         rows="1"
         wrap="hard"
       />
-      <n8n-icon-button-stub
+      <n8n-button-stub
         active="false"
+        block="false"
         class="sendButton"
         data-test-id="send-message-button"
         disabled="true"
+        element="button"
         icon="send"
+        label=""
         loading="false"
         outline="false"
         size="large"
+        square="true"
         text="true"
         type="primary"
       />
